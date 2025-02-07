@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/jeromeetienne/AR.js/1.7.2/aframe/build/aframe-ar.min.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    <a-scene embedded arjs>
+      <a-assets>
+        <img id="image" src="SAM_0356.jpg" />
+      </a-assets>
+
+      <a-marker preset="hiro">
+        <a-plane src="#image" position="0 0 0" rotation="-90 0 0" width="2" height="2"></a-plane>
+      </a-marker>
+
+      <a-camera position="0 0 0"></a-camera>
+    </a-scene>
+  </body>
+</html>
